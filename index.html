@@ -1,40 +1,143 @@
-  </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <h1>Meal Tracker</h1>
+        <p>Set your daily goals, log servings, and export a CSV for your day.</p>
+      </header>
 
-        <div class="tracker__row" data-group="Dairy">
-          <div>
-            <h2>Dairy</h2>
-            <label class="tracker__label" for="goal-dairy">Daily goal</label>
-            <input
-              id="goal-dairy"
-              type="number"
-              min="0"
-              step="1"
-              class="tracker__input"
-              value="2"
-            />
-          </div>
-          <div class="tracker__actions">
-            <button class="tracker__button" type="button">Add Dairy</button>
-            <div class="tracker__progress">
-              <span class="tracker__count" aria-live="polite">0/2</span>
-              <progress class="tracker__bar" value="0" max="2">0%</progress>
+      <main>
+        <section class="tracker" aria-label="Daily meal tracker">
+          <div class="tracker__row" data-group="Fruit">
+            <div>
+              <h2>Fruit</h2>
+              <label class="tracker__label" for="goal-fruit">Daily goal</label>
+              <input
+                id="goal-fruit"
+                type="number"
+                min="0"
+                step="1"
+                class="tracker__input"
+                value="2"
+              />
+            </div>
+            <div class="tracker__actions">
+              <button class="tracker__button" type="button">Add Fruit</button>
+              <div class="tracker__progress">
+                <span class="tracker__count" aria-live="polite">0/2</span>
+                <progress class="tracker__bar" value="0" max="2">0%</progress>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="export" aria-label="Export your tracker data">
-        <h2>Export your day</h2>
-        <p>Download a CSV or share it with another app.</p>
-        <div class="export__controls">
-          <label class="export__label" for="export-date">Date</label>
-          <input id="export-date" type="date" class="export__input" />
-          <button class="export__button" type="button">Export CSV</button>
-        </div>
-        <p class="export__status" aria-live="polite"></p>
-      </section>
-    </main>
+          <div class="tracker__row" data-group="Vegetables">
+            <div>
+              <h2>Vegetables</h2>
+              <label class="tracker__label" for="goal-vegetables">Daily goal</label>
+              <input
+                id="goal-vegetables"
+                type="number"
+                min="0"
+                step="1"
+                class="tracker__input"
+                value="3"
+              />
+            </div>
+            <div class="tracker__actions">
+              <button class="tracker__button" type="button">Add Vegetables</button>
+              <div class="tracker__progress">
+                <span class="tracker__count" aria-live="polite">0/3</span>
+                <progress class="tracker__bar" value="0" max="3">0%</progress>
+              </div>
+            </div>
+          </div>
+
+          <div class="tracker__row" data-group="Grains">
+            <div>
+              <h2>Grains</h2>
+              <label class="tracker__label" for="goal-grains">Daily goal</label>
+              <input
+                id="goal-grains"
+                type="number"
+                min="0"
+                step="1"
+                class="tracker__input"
+                value="4"
+              />
+            </div>
+            <div class="tracker__actions">
+              <button class="tracker__button" type="button">Add Grains</button>
+              <div class="tracker__progress">
+                <span class="tracker__count" aria-live="polite">0/4</span>
+                <progress class="tracker__bar" value="0" max="4">0%</progress>
+              </div>
+            </div>
+          </div>
+
+          <div class="tracker__row" data-group="Protein">
+            <div>
+              <h2>Protein</h2>
+              <label class="tracker__label" for="goal-protein">Daily goal</label>
+              <input
+                id="goal-protein"
+                type="number"
+                min="0"
+                step="1"
+                class="tracker__input"
+                value="2"
+              />
+            </div>
+            <div class="tracker__actions">
+              <button class="tracker__button" type="button">Add Protein</button>
+              <div class="tracker__progress">
+                <span class="tracker__count" aria-live="polite">0/2</span>
+                <progress class="tracker__bar" value="0" max="2">0%</progress>
+              </div>
+            </div>
+          </div>
+
+          <div class="tracker__row" data-group="Dairy">
+            <div>
+              <h2>Dairy</h2>
+              <label class="tracker__label" for="goal-dairy">Daily goal</label>
+              <input
+                id="goal-dairy"
+                type="number"
+                min="0"
+                step="1"
+                class="tracker__input"
+                value="2"
+              />
+            </div>
+            <div class="tracker__actions">
+              <button class="tracker__button" type="button">Add Dairy</button>
+              <div class="tracker__progress">
+                <span class="tracker__count" aria-live="polite">0/2</span>
+                <progress class="tracker__bar" value="0" max="2">0%</progress>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="export" aria-label="Export your tracker data">
+          <h2>Export your day</h2>
+          <p>Download a CSV or share it with another app.</p>
+          <div class="export__controls">
+            <label class="export__label" for="export-date">Date</label>
+            <input id="export-date" type="date" class="export__input" />
+            <button class="export__button" type="button">Export CSV</button>
+          </div>
+          <p class="export__status" aria-live="polite"></p>
+        </section>
+      </main>
+    </div>
 
     <script src="app.js"></script>
   </body>
